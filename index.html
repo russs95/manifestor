@@ -17,14 +17,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.8, target-densitydpi=160, maximum-scale=1, user-scalable = no">
 <meta name="apple-mobile-web-app-title" content="Manifestor">
 
-<meta name="apple-mobile-web-app-status-bar-style" content="Manifestor">
+<meta name="apple-mobile-web-app-status-bar-style" content="🌀 Manifestor">
 
 
-<link rel="stylesheet" type="text/css" href="https://manifest.earthen.io/stylesheet" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
 
 
 
-<title>MANIFEST</title>
+<title>🌀 Manifest</title>
 <meta name="keywords" content="mandala, mtc, manifestor">
 <meta name="description" content="Manifest Mandalically">
 
@@ -58,8 +58,47 @@ body {
    height:100%;
 }
 
-#full-page {
-   font-family: 'Inter', sans-serif;;
+
+#footer-full {
+    width: 100%;
+    margin-top:20px;
+    z-index: -1;
+  display: block;
+  text-align: center;
+  background: #b4428e;
+  bottom: 0px;
+  position: absolute;
+  }
+  
+  
+  
+  .row {  
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  
+  
+  /* Main column */
+  
+  @media screen and (min-width: 700px) {
+    .virtue {
+      flex: auto;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+    }
+    
+    @media screen and (max-width: 700px) {
+    .virtue {
+      flex: 100%;
+      box-sizing: border-box;
+    }
+    }
+
+
+p {
+   font-family: 'Inter', sans-serif;
 }
 
 #loading-box {
@@ -84,20 +123,39 @@ body {
    position:relative;
 }	 
 	
-#header {padding: 50px;
+#header {padding: 30px;
 background-color: #b4428e;
 }
 
+.motto {
+   font-family: 'Fjalla One', sans-serif;
+   font-size: 1.5em;
+   text-align: right;
+   color: white;
+   padding-top: 30px;
+   padding-right: 20px;
+}
 
-#footer-full {
-  width: 100%;
-  margin-top:20px;
-  z-index: -1;
-display: block;
-text-align: center;
-background: #b4428e;
-color: white;
-font-family: 'Fjalla One', sans-serif;}
+.fine-print  {
+   font-family: 'Inter', sans-serif;
+   color: white;
+   text-align: right;
+   font-size: 1.0em;
+   padding-top: 10px;
+   padding-right: 20px;
+}
+
+.fine-print a {
+   color: white;
+   text-decoration: underline;
+}
+
+.fine-print a:hover {
+   color: white;
+   text-decoration: none;
+}
+
+
 
 </style>
 
@@ -106,22 +164,44 @@ font-family: 'Fjalla One', sans-serif;}
 <body id="full-page">
 	<div id="loading-box">
       <div id="header"  class="top-menu">
-         <a href="/#home"><div class="logo"><img src="svgs/manifestor-logo.svg" width="250" height="58" alt="Manifestor App"></a></div></div> 
+         <a href="/#home"><div class="logo"><img src="svgs/manifestor-logo.svg" width="300px" height="" alt="Manifestor App"></a></div></div> 
          
          <body id="knack-body">
             <div id="knack-content">
 
-
-            <div id="knack-dist_3">Manifestor<br> Loading v0.1.2<div>
+               <div id="knack-dist_3"><div class="loader"></div><div>
 
             </div>
          </div>
 
-    <div id="footer-full">
-<div id="footer" style="display:block; text-align:center;"><i><font style="font-family:arial;" size="2"><br><br><br><br><br>
-Manifesting through Intention, Retrospective Time Tracking.</i><br><br><strong><font size="3"><a href='http://www.go.russs.net/#home' style="color: #ddd">Home</a>    |    <a href='#home' style="color: #ddd">Russs.net</a>    |    <a href='http://www.russs.net' style="color: #ddd"></font></strong><br><br>
-<a href="www.russs.net" style="color: #A9CDD8">Manifestor v0.1</a> is a creation of <br><a href="http://www.russs.net" style="color: #ddd">Russell Maier</a></font><br><br><img src="/images/manifestor-emblem.png" alt="Manifestor"></div> 
-</div>
+      <div id="footer-full">
+
+         <div class="row">
+
+            <div class="virtue">
+               <a href="about"><img src="webp/forearth-black-500px.webp" width="335px" height="" alt="Learn more about our Earth Enterprise structure" title="Learn more about our Earth Enterprise structure"></a>
+            </div>
+      
+
+            <div class="virtue">
+               <a href="https://www.gobrik.com/#my-catalyst/enterprise-disclosure/5e1f513586a7fe0015e77628/" target="_blank"><img src="webp/disclose-black-500px.webp" width="350px" height="" alt="Click through to see a full and live breakdown of our 2021 ecological impacts" title="Click through to see a full and live breakdown of our 2021 ecological impacts on the GoBrik.com"></a>
+
+               
+            </div>
+
+            <div class="virtue">
+               <div class="motto">Spiralling Intention Manifestation through Retrospection.
+               </div>
+               <div class="fine-print">Manifestor version 0.1 by <a href="https://russs.net">Russs</a> & <a href="https://earthen.io">Earthen</a></div>
+            </div>
+   <!--
+            <div id="wcb" class="carbonbadge wcb-d"></div>
+            <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+            <a href="https://www.websitecarbon.com/website/earthen.io/"><img src="webp/web-carbon.webp" width="330px"></a>-->
+         </div>
+      </div>
+   
+   </div>
 </body>
 </html>
 
