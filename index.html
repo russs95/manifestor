@@ -57,6 +57,28 @@ body {
    padding:0;
    height:100%;
 }
+
+#full-page {
+   font-family: 'Inter', sans-serif;;
+}
+
+#loading-box {
+	min-height: 100vh;
+	width: 100%;
+	}	
+
+
+	@media screen and (min-width: 1000px) {
+		#loading-box {
+		margin-bottom: -15vh;
+	}
+}
+@media screen and (max-width: 999px) {
+	#loading-box   {
+		margin-bottom: 14vh;}
+}	
+
+
 #container {
    min-height:100%;
    position:relative;
@@ -66,7 +88,12 @@ body {
 background-color: #b4428e;
 }
 
-#footer {display: block;
+
+#footer-full {
+  width: 100%;
+  margin-top:20px;
+  z-index: -1;
+display: block;
 text-align: center;
 background: #b4428e;
 color: white;
@@ -76,19 +103,21 @@ font-family: 'Fjalla One', sans-serif;}
 
 </head>
 
-<div id="header"  class="top-menu">
-    <a href="/#home"><div class="logo"><img src="svgs/manifestor-logo.svg" width="250" height="58" alt="Manifestor App"></a></div></div> 
-     
-     <body id="knack-body">
-        <div id="knack-content">
+<body id="full-page">
+	<div id="loading-box">
+      <div id="header"  class="top-menu">
+         <a href="/#home"><div class="logo"><img src="svgs/manifestor-logo.svg" width="250" height="58" alt="Manifestor App"></a></div></div> 
+         
+         <body id="knack-body">
+            <div id="knack-content">
 
 
-        <div id="knack-dist_3">Manifestor<br> Loading v0.1.2<div>
+            <div id="knack-dist_3">Manifestor<br> Loading v0.1.2<div>
 
-      </div>
-    </div>
+            </div>
+         </div>
 
-
+    <div id="footer-full">
 <div id="footer" style="display:block; text-align:center;"><i><font style="font-family:arial;" size="2"><br><br><br><br><br>
 Manifesting through Intention, Retrospective Time Tracking.</i><br><br><strong><font size="3"><a href='http://www.go.russs.net/#home' style="color: #ddd">Home</a>    |    <a href='#home' style="color: #ddd">Russs.net</a>    |    <a href='http://www.russs.net' style="color: #ddd"></font></strong><br><br>
 <a href="www.russs.net" style="color: #A9CDD8">Manifestor v0.1</a> is a creation of <br><a href="http://www.russs.net" style="color: #ddd">Russell Maier</a></font><br><br><img src="/images/manifestor-emblem.png" alt="Manifestor"></div> 
