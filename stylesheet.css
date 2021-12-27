@@ -1,5 +1,8 @@
 
-.loader { 
+
+		/*
+
+		.loader { 
 	z-index: 1;	
 	position: fixed;
  	 left: 0px;
@@ -10,7 +13,6 @@
   	background: url('svgs/spiral-loader.svg') center no-repeat;
     	box-sizing: border-box;
 	 background-size: 100px;
-		/*
 	-webkit-animation-delay: 0s !important;
 	opacity:0;
 	-webkit-animation:fadeIn ease-in 0.3s;
