@@ -50,88 +50,10 @@ distribution_key="knack-dist_2";
 
 <style>
 
-html,
-body {
-   margin:0;
-   padding:0;
-   height:100%;
-}
 
 
 
- 
-.blink {
-    animation: blinker 1s linear infinite;
-}
 
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
-	 }
-
-#footer-full {
-    width: 100%;
-    margin-top:20px;
-    z-index: -1;
-  display: block;
-  text-align: center;
-  background: #b4428e;
-
-  }
-  
-  
-  
-  .row {  
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-  }
-  
-  
-  /* Main column */
-  
-  @media screen and (min-width: 700px) {
-    .virtue {
-      flex: auto;
-      padding: 15px;
-      box-sizing: border-box;
-    }
-    }
-    
-    @media screen and (max-width: 700px) {
-    .virtue {
-      flex: 100%;
-      box-sizing: border-box;
-    }
-    }
-
-
-p {
-   font-family: 'Inter', sans-serif;
-}
-
-#loading-box {
-	min-height: 100vh;
-	width: 100%;
-	}	
-
-
-	@media screen and (min-width: 1000px) {
-		#loading-box {
-		margin-bottom: -15vh;
-	}
-}
-@media screen and (max-width: 999px) {
-	#loading-box   {
-		margin-bottom: 14vh;}
-}	
-
-
-#container {
-   min-height:100%;
-   position:relative;
-}	 
 	
 #header {padding: 30px 30px 20px 30px;
 background: #b4428e;
@@ -141,14 +63,20 @@ background: #b4428e;
 background: #b4428e;
 font-family: 'Inter', sans-serif;
 font-weight: 600;
-
 }
 
 .kn-info-bar {
    font-family: 'Inter', sans-serif;
-background: white;
+background: white !important;
 font-size: 0.9em;
 }
+
+
+
+
+
+
+
 
 .motto {
    font-family: 'Fjalla One', sans-serif;
@@ -179,11 +107,7 @@ font-size: 0.9em;
    text-decoration: none;
 }
 
-#kn-loading-spinner {
-   display: block;
-   background: url('svgs/spiral-loader.svg') center no-repeat;
 
-}
 
 
 		.loader { 
@@ -210,6 +134,12 @@ font-size: 0.9em;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;*/
 }
+/*
+#kn-loading-spinner {
+   display: block;
+   background: url('svgs/spiral-loader.svg') center no-repeat;
+}
+*/
 
 /*Welcome*/
 
@@ -258,7 +188,7 @@ text-align: center;
          <body id="knack-body">
             <div id="knack-content">
 
-               <div id="knack-dist_3"> <div class="loader"></div><div class="blink"><p>Manifesting...</p></div>
+               <div id="knack-dist_3"> <div class="loader"><div class="blink"><p>Manifesting...</p></div></div>
             
             </div>
                   
