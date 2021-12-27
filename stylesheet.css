@@ -47,7 +47,7 @@ p {
    position:relative;
 }	 
 
-
+/* FOOTER */
 
 #footer-full {
     width: 100%;
@@ -58,6 +58,38 @@ p {
   background: #b4428e;
 
   }
+
+
+.motto {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 1.5em;
+	text-align: right;
+	color: white;
+	padding-top: 30px;
+	padding-right: 20px;
+ }
+ 
+ .fine-print  {
+	font-family: 'Inter', sans-serif;
+	color: white;
+	text-align: right;
+	font-size: 1.0em;
+	padding-top: 10px;
+	padding-right: 20px;
+	font-weight: 200;
+ }
+ 
+ .fine-print a {
+	color: white;
+	text-decoration: underline;
+ }
+ 
+ .fine-print a:hover {
+	color: white;
+	text-decoration: none;
+ }
+ 
+ 
   
   
   
