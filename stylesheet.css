@@ -50,12 +50,13 @@ p {
 /* FOOTER */
 
 #footer-full {
-    width: 100%;
-    margin-top:20px;
+    margin-top: 100px;
+	padding: 30px 10px 50px 10px;
     z-index: -1;
   display: block;
   text-align: center;
   background: #b4428e;
+  padding: 
 
   }
 
